@@ -1,6 +1,7 @@
 // this is using some native node.js functions
 const path = require("path")
 const fs = require("fs")
+const { time } = require("console")
 
 // path to content directory
 const dirPath = path.join(__dirname, "../src/content")
@@ -77,13 +78,18 @@ const getPosts = () => {
                 // will also pass in lines and indexes
                 const content = parseContent({lines, metaDataIndexes})
 
+                // get date, for it to work it has to look like this in md:
+                // date: July 2 2020
+                const date = new Date(metaData.date)
+                // get unix timestamp
+                const timeStamp = date.getTime() / 1000
+                //console.log(timeStamp)
 
                 post = {
                     // give an id, becuase we display dynamically with page templates
                     // and it works with react router
 
-                    // this is just so that id starts with 1 instead of 0
-                    id: i + 1,
+                    id: timeStamp,
                     // if there's a title ?, then return title :, otherwise
                     title: metaData.title ? metaData.title : "No title given😶",
                     author: metaData.author ? metaData.author : "No author given😶",
@@ -97,8 +103,13 @@ const getPosts = () => {
                 // we only want this to run once for each file
                 // if we're at the last file in the folder
                 if (i === files.length - 1) {
-                    // stringify content
-                    let data = JSON.stringify(postList)
+
+                    const sortedList = postList.sort ((a, b) => {
+                        return a.id < b.id ? 1 : -1
+                    })
+
+                    // stringify content in sortedList order
+                    let data = JSON.stringify(sortedList)
                     // write to this file and add data
                     // writefilesync replaces the data every run
                     fs.writeFileSync("src/posts.json", data)

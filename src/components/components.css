@@ -1,0 +1,59 @@
+h1 {
+    font-family: "Open Sans";
+    font-weight: lighter;
+
+    margin: 3%;
+}
+
+h2 {
+    font-family: "Open Sans";
+    font-weight: bolder;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 100vh;
+
+    text-align: center;
+}
+
+.header {
+    /* TODO: cool animation here */
+    background-color: rgb(92, 0, 84);
+
+    color: rgb(255, 223, 248);
+
+    padding: 10px 20px;
+
+    text-align: center;
+}
+
+.footer {
+    margin: 0;
+    
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.post-element {
+    text-align: left;
+
+    border: 1px solid rgb(197, 143, 197);
+
+    -webkit-box-shadow: 9px 9px 17px -8px rgba(136,0,194,1);
+    -moz-box-shadow: 9px 9px 17px -8px rgba(136,0,194,1);
+    box-shadow: 9px 9px 17px -8px rgba(136,0,194,1);
+
+    margin-bottom: 10vh;
+    /* so it won't get pushed to edge of border */
+    padding: 0 15px;
+
+    font-family: "Open Sans";
+    font-weight: lighter;
+}
