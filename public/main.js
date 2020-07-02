@@ -11,9 +11,10 @@ const dirPath = path.join(__dirname, "../src/content")
 // we also want them in an array, so we can then loop the array and display all the posts
 let postList = []
 
-const getPosts = async () => {
+const getPosts = () => {
     // async func to read directory
-    await fs.readdir(dirPath, (err, files) => {
+    fs.readdir(dirPath, (err, files) => {
+        //console.log(files.length)
         if (err) {
             return console.log("Failed to list contents of dir 😔: " + err)
         }
@@ -91,14 +92,23 @@ const getPosts = async () => {
                 }
                 // add post to array
                 postList.push(post)
+                //console.log(postList)
+
+                // we only want this to run once for each file
+                // if we're at the last file in the folder
+                if (i === files.length - 1) {
+                    // stringify content
+                    let data = JSON.stringify(postList)
+                    // write to this file and add data
+                    // writefilesync replaces the data every run
+                    fs.writeFileSync("src/posts.json", data)
+                }
             })
         })
     })
 
     //console.log(postList) won't show anything becuase it doesn't wait long enough to loop over the posts
-    setTimeout(() => {
-        console.log(postList)
-    }, 500)
+    return
 }
 
 getPosts()
