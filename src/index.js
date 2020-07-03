@@ -6,11 +6,13 @@ import './index.css';
 import "typeface-open-sans"
 
 import Home from "./pages/Home"
+import About from "./pages/About"
 
 ReactDOM.render(
   <Router>
     <div>
       <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
     </div>
   </Router>,
   document.getElementById('root')

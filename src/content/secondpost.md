@@ -11,6 +11,6 @@ It's a 2D Platformer where you play as a ball-shaped cat and have to save the mo
 The game is, obviously, far from perfect and has a lot of issues.
 
 Trailer:
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GZ-7jcGK_hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="280" height="157" src="https://www.youtube-nocookie.com/embed/GZ-7jcGK_hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Play in Browser / Download for Windows, Mac and Linux](https://riesyeti.itch.io/catformer)

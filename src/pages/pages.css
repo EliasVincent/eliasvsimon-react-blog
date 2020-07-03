@@ -3,3 +3,9 @@
     margin: auto;
     padding-top: 80px;
 }
+
+.page-content{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}

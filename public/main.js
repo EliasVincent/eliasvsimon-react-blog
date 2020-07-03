@@ -5,12 +5,14 @@ const { time } = require("console")
 
 // path to content directory
 const dirPath = path.join(__dirname, "../src/content")
+const dirPathPages = path.join(__dirname, "../src/pages/content")
 
 // Now we want to create posts as js objects, they're supposed to have
 // the metadata inside the md files and it's content
 
 // we also want them in an array, so we can then loop the array and display all the posts
 let postList = []
+let pageList = []
 
 const getPosts = () => {
     // async func to read directory
@@ -122,6 +124,34 @@ const getPosts = () => {
     return
 }
 
-getPosts()
+
+
+
+
+// same thing but for the pages
+const getPages = () => {
+    fs.readdir(dirPathPages, (err, files) => {
+        if (err) {
+            return console.log("Failed to list contents of dir 😔: " + err)
+        }
+
+        files.forEach((file, i) => {
+            let page
+
+            fs.readFile(`${dirPathPages}/${file}`, "utf8", (err, contents) => {
+                //console.log(contents)
+                page = {
+                    content: contents
+                }
+                pageList.push(page)
+                let data = JSON.stringify(pageList)
+                fs.writeFileSync("src/pages.json", data)
+            })
+        })
+    })
+    return
+}
 
 // postList Array will later be a JSON file
+getPosts()
+getPages()
