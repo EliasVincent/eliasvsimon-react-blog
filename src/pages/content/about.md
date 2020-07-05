@@ -1,5 +1,3 @@
-
-
 Hi! I'm Elias and this is eliasvsimon.com, my personal React website/blog
 
 Currently I'm learning **programming with web-development and also game-development**, check out my games page.

@@ -14,9 +14,12 @@ h2 {
 
 .link {
     text-decoration: none;
-    color: rgb(68, 21, 21);
+    color: rgb(61, 12, 12);
     font-weight: lighter;
-    font-size: x-large;
+}
+
+.link:hover {
+    text-decoration: underline rgb(61, 12, 12);
 }
 
 /* --- COMPONENTS --- */
