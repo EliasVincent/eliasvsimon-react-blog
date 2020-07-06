@@ -21,7 +21,7 @@ const Games = () => {
               color: "white",
             }}
           >
-            About / Contact
+            Games
           </h1>
 
           <Markdown source={gamesText[1].content} escapeHtml={false} />

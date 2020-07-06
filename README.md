@@ -5,4 +5,4 @@ It will use some elements and design things from the good-ole classic eliasvsimo
 
 ### Credits
 
-Significant parts of this React App are from willjw3's series on a React Blog Home Page with Markdown. [visit his website}(https://developer-log.netlify.app/)
+Significant parts of this React App are from willjw3's series on a React Blog Home Page with Markdown. [visit his website](https://developer-log.netlify.app/)

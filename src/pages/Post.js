@@ -47,7 +47,7 @@ const Post = (props) => {
             <div className="post">
                 <div className="post-title">
                     <h1>{fetchedPost.title}</h1>
-                    <small>Spawned into existence by {fetchedPost.title} on {fetchedPost.date}</small>
+                    <small>Spawned into existence by {fetchedPost.author} on {fetchedPost.date}</small>
                     <hr />
                 </div>
                 <br />
