@@ -14,12 +14,27 @@ h2 {
 
 .link {
     text-decoration: none;
-    color: rgb(61, 12, 12);
+    color: rgb(233, 233, 233);
     font-weight: lighter;
 }
 
 .link:hover {
-    text-decoration: underline rgb(61, 12, 12);
+    color: rgb(151, 53, 122);
+
+    transition: 0.2s ease-out;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.nav-link:hover {
+    color: rgb(151, 53, 122);
+
+    transition: 0.2s ease-out;
 }
 
 /* --- COMPONENTS --- */
@@ -35,21 +50,41 @@ h2 {
 }
 
 .header {
-    /* TODO: cool animation here */
-    background-color: rgb(92, 0, 84);
-    /* background-color: rgb(199, 199, 199) */
-    color: rgb(255, 223, 248);
+    background-image: repeating-linear-gradient(
+        -90deg,
+        rgb(109, 0, 124),
+        rgb(77, 12, 77),
+        rgb(34, 6, 34),
+        rgb(20, 20, 20)
+    );
+    background-size: 200%;
+    background-repeat: no-repeat;
+    animation: Diagonal alternate 10s infinite;
 
+    color: rgb(255, 223, 248);
+    text-shadow: 2px 1px 6px rgba(150, 150, 150, 1);
     padding: 10px 20px;
 
     text-align: center;
 }
 
+@keyframes Diagonal {
+    0% {background-position: 0% 50%}
+    100% {background-position: 100% 50%}
+}
+
 .navbar {
+
     display: flex;
     justify-content: space-around;
     
     padding: 10px 5px;
+
+    border: 1px transparent rgb(197, 143, 197);
+
+    -webkit-box-shadow: 0px 12px 17px -8px rgba(136,0,194,1);
+    -moz-box-shadow: 0px 12px 17px -8px rgba(136,0,194,1);
+    box-shadow: 0px 12px 17px -8px rgba(136,0,194,1);
 }
 
 .footer {
@@ -65,7 +100,7 @@ h2 {
 .post-element {
     text-align: left;
 
-    border: 1px solid rgb(197, 143, 197);
+    border: 1px solid rgb(153, 9, 153);
 
     -webkit-box-shadow: 9px 9px 17px -8px rgba(136,0,194,1);
     -moz-box-shadow: 9px 9px 17px -8px rgba(136,0,194,1);

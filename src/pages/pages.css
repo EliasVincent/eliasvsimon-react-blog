@@ -1,3 +1,23 @@
+h2{
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    font-weight: lighter;
+}
+
+a:hover {
+    color: rgb(151, 53, 122);
+
+    transition: 0.2s ease-out;
+}
+
+p{
+    font-weight: lighter;
+}
+
 .postlist {
     width: 80%;
     margin: auto;
@@ -5,7 +25,7 @@
 }
 
 .page-content{
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: left;
 }
@@ -30,7 +50,7 @@
     margin: auto;
     text-align: left;
 
-    border: 1px solid rgb(197, 143, 197);
+    border: 1px solid rgb(167, 77, 167);
 
     -webkit-box-shadow: 9px 9px 17px -8px rgba(136,0,194,1);
     -moz-box-shadow: 9px 9px 17px -8px rgba(136,0,194,1);
