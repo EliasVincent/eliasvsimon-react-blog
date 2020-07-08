@@ -12,6 +12,11 @@ h2 {
     font-weight: bolder;
 }
 
+hr {
+    height: 0;
+    color: rgb(107, 0, 107);
+}
+
 .link {
     text-decoration: none;
     color: rgb(233, 233, 233);
@@ -112,4 +117,52 @@ h2 {
 
     font-family: "Open Sans";
     font-weight: lighter;
+}
+
+/* --- POST CREATOR -- */
+
+.post-creator{
+
+}
+
+.post-form {
+    padding-top: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.post-input {
+    margin: 20px 10px;
+    height: 10vh;
+}
+
+.post-button {
+    margin: 20px 10px;
+    height: 5vh;
+
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    color: #b1b1b1;
+    background: purple;
+    box-shadow: 0;
+    /**/
+    transition: 0.2s;
+}
+
+.post-button:hover {
+    transition: 0.2s;
+    box-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 40px purple;
+}
+
+.created-post {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.hidden-form {
+    display: none;
 }
