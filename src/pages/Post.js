@@ -41,6 +41,11 @@ const Post = (props) => {
         return <Redirect to="/404" />
     }
 
+    // custom styling for Images in Markdown
+    function Image(props) {
+        return <img {...props} style={{maxHeight: '40%'}} alt="" />
+      }
+
 
     return(
         <Layout>
@@ -53,7 +58,8 @@ const Post = (props) => {
                 <br />
                 <Markdown
                 source={fetchedPost.content} 
-                escapeHtml={false}
+                escapeHtml={false} 
+                renderers={{image: Image}}
                 />
             </div>
         </Layout>

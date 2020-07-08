@@ -135,8 +135,20 @@ hr {
 }
 
 .post-input {
+    font-family: "Open Sans";
+    text-align: center;
     margin: 20px 10px;
     height: 10vh;
+
+    background: rgb(53, 53, 53);
+    color: white;
+
+    transition: 0.5s;
+}
+
+.post-input:focus {
+    transition: 0.5s;
+    background: rgb(19, 19, 19);
 }
 
 .post-button {

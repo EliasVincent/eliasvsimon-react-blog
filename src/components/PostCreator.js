@@ -13,6 +13,7 @@ export default class PostCreator extends Component {
     // need to be binded manually, don't know why tho
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleNoEnter = this.handleNoEnter.bind(this)
   }
 
   handleChange(event) {
@@ -32,6 +33,12 @@ export default class PostCreator extends Component {
     });
   }
 
+  handleNoEnter(event) {
+    if (event.keyCode === 13) {
+      //event.preventDefault()
+    }
+  }
+
   render() {
     return (
       <div className="post">
@@ -40,13 +47,14 @@ export default class PostCreator extends Component {
             className={this.state.isChanged ? "hidden-form" : "post-form"}
             onSubmit={this.handleSubmit}
           >
-            <input 
+            <textarea 
               className="post-input"
               type="text"
               onChange={this.handleChange}
               name="boxContent"
-              placeholder="type in your own post here.."
-            ></input>
+              placeholder="type in your own post here.  Supports Markdown Syntax!"
+              onKeyDown={this.handleNoEnter}
+            ></textarea>
             <button className="post-button">Create a post! (local & temporary)</button>
           </form>
           <br />

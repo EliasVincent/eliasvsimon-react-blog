@@ -14,7 +14,7 @@ const Home = () => {
         <div>
             <Layout>
                 <PostList />
-                <h1>Create your own post here:</h1>
+                <h1>Create your own Markdown post here:</h1>
                 <PostCreator />
             </Layout>
         </div>
