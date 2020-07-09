@@ -24,7 +24,7 @@ const About = () => {
           About / Contact
         </h1>
         
-        <Markdown source={aboutText[2].content} escapeHtml={false} />
+        <Markdown source={aboutText[0].content} escapeHtml={false} />
       </div>
       </div>
     </Layout>
