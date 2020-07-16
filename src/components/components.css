@@ -82,6 +82,7 @@ hr {
 
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
     padding: 10px 5px;
 
@@ -154,9 +155,12 @@ hr {
 .post-button {
     margin: 20px 10px;
     height: 5vh;
+    max-width: 60%;
 
     border: none;
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: none;
     color: #b1b1b1;
     background: purple;
@@ -177,4 +181,8 @@ hr {
 
 .hidden-form {
     display: none;
+}
+
+.full-hr {
+    width: 70vw;
 }

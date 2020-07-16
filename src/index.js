@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Games from "./pages/Games"
 import Post from "./pages/Post"
+import PostCreatorSite from "./pages/PostCreatorSite"
 import NotFound from "./pages/NotFound"
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/games" component={Games} />
+      <Route exact path="/post-creator" component={PostCreatorSite} />
       <Route exact path="/404" component={NotFound} />
 
       <Route exact path="/post/:id" render={props => <Post {...props} />} />

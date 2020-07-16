@@ -55,6 +55,7 @@ export default class PostCreator extends Component {
               placeholder="type in your own post here.  Supports Markdown Syntax!"
               onKeyDown={this.handleNoEnter}
             ></textarea>
+            <hr class="full-hr" />
             <button className="post-button">Create a post! (local & temporary)</button>
           </form>
           <br />

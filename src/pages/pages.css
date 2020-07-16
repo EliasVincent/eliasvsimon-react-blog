@@ -16,12 +16,15 @@ a:hover {
 
 p{
     font-weight: lighter;
-    font-size: large;
+    font-size: larger;
 }
 
 img {
     max-height: 90vh;
-    max-width: 80%;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -70,4 +73,9 @@ img {
 
     font-family: "Open Sans";
     font-weight: lighter;
+}
+
+.pcs-h1 {
+    margin-top: 10vh;
+    margin-bottom: 1vh;
 }
