@@ -156,7 +156,7 @@ hr {
     margin: 20px 10px;
     height: 5vh;
     max-width: 60%;
-
+    
     border: none;
     display: inline-block;
     margin-left: auto;
@@ -185,4 +185,14 @@ hr {
 
 .full-hr {
     width: 70vw;
+}
+
+.gex-simulator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gex-quote {
+    text-align: center;
 }
