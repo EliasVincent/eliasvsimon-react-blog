@@ -9,6 +9,8 @@ This site is a React App which turns Markdown files into pages. It's pretty cool
 
 [Github](https://github.com/EliasVincent)
 
+[Stackoverflow](https://stackoverflow.com/users/12643651/riesyeti)
+
 [YouTube Channel](https://www.youtube.com/channel/UCqHdyJTEdBcqa2J4EvLi5gA)
 
 [Games on Itch.io](https://riesyeti.itch.io)
