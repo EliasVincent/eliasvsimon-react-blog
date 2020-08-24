@@ -12,13 +12,15 @@ export default class GexSimulator extends Component {
   handleClick() {
     console.log("clicked!")
     const verbs = [
-      "partying",
+      "partying with",
       "killing",
       "playing with",
-      "feeding",
+      "feeding people",
       "making love with",
-      "cuddling",
+      "cuddling with",
       "making fun of",
+      "washing",
+      "consuming",
     ];
 
     const nouns = [
@@ -29,6 +31,9 @@ export default class GexSimulator extends Component {
       "computers",
       "Gex 64 cartridges",
       "Gran Turismo Concept 2002 Tokyo Geneva discs",
+      "Mate bottles",
+      "giant piles of dirty dishes",
+      "edibles",
     ];
 
     const celebs = [
@@ -41,6 +46,8 @@ export default class GexSimulator extends Component {
       "Miyazaki",
       "George R.R. Martin",
       "Geoff Keighley",
+      "Donburg",
+      "Steph",
     ];
 
     let verb = verbs[Math.floor(Math.random() * verbs.length)];
