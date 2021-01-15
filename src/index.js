@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route} from "react-router-dom"
 import './index.css';
 
+import * as serviceWorker from "./serviceWorker";
+
 import "typeface-open-sans"
 
 import Home from "./pages/Home"
@@ -29,3 +31,5 @@ ReactDOM.render(
 
 //<Route exact path="/" component={App} /> should render the same thing but with React Router
 // component={Name of Component specified and imported in import}
+
+serviceWorker.register()
