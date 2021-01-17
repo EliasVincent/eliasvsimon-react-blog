@@ -15,4 +15,10 @@ This site is a React App which turns Markdown files into pages. It's pretty cool
 
 [Games on Itch.io](https://riesyeti.itch.io)
 
+[Catspace Mastodon](https://catspace.xyz)
+
+[Check status of catspace.xyz](https://status.catspace.xyz)
+
+[Catspace Main Account](https://catspace.xyz/web/accounts/1#)
+
 [Email](mailto:riesyeti@outlook.de)
