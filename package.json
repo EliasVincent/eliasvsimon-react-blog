@@ -11,7 +11,7 @@
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "typeface-open-sans": "0.0.75"
+    "typeface-open-sans": "1.1.13"
   },
   "scripts": {
     "start": "react-scripts start",
