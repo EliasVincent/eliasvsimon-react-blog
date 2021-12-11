@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "serverAndDev",
+			"problemMatcher": [],
+			"label": "npm: serverAndDev",
+			"detail": "concurrently --kill-others \"node public/main.js\" \"react-scripts start\"",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
