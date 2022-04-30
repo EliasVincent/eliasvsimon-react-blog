@@ -3,7 +3,7 @@ Hi! I'm Elias and this is eliasvsimon.com, my personal React website/blog
 Currently I'm learning **programming with web-development and also game-development**, check out my games page.
 Of course I still have *much* to learn, so this website will change a lot over time.
 
-This site is a React App which turns Markdown files into pages. It's pretty cool.
+This site is a React App which turns Markdown files into pages. It's pretty cool. 
 
 ## Links to my other stuff:
 

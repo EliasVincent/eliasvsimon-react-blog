@@ -9,11 +9,11 @@ const Navbar = () => {
             <Link className="nav-link" to="/">Home</Link>
             <Link className="nav-link" to="/games">Games</Link>
             <Link className="nav-link" to="/apps">Apps</Link>
-            <a target="_blank" 
+            {/*<a target="_blank" 
             rel="noopener noreferrer"
             className="nav-link" 
-            href="https://blog.catspace.xyz"
-            >Catspace</a>
+            href="https://catspace.xyz"
+            >Catspace</a>*/}
             <Link className="nav-link" to="/about">About</Link>
         </div>
     )

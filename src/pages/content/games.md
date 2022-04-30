@@ -10,3 +10,7 @@ Here you access all of my games and the ones I've been part of
 ## Perestroika:
 
 <iframe src="https://itch.io/embed/677649?dark=true" width="208" height="167" frameborder="0"><a href="https://riesyeti.itch.io/perestroika">Perestroika by Riesyeti</a></iframe>
+
+## Hell: Retaliation:
+
+<iframe src="https://itch.io/embed/1500520?dark=true" width="208" height="167" frameborder="0"><a href="https://riesyeti.itch.io/hell-retaliation">Hell: Retaliation by Riesyeti</a></iframe>
