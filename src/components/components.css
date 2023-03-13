@@ -186,13 +186,3 @@ hr {
 .full-hr {
     width: 70vw;
 }
-
-.gex-simulator {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.gex-quote {
-    text-align: center;
-}
