@@ -29,7 +29,7 @@ const PostList = () => {
 
                             {/* pass Markdown text in as props, and make HTML thing render properly (like iframes/embeds) */}
                             <Markdown 
-                            source={snippetList[i]} 
+                            source={snippetList[i] + " ..."} 
                             escapeHtml={false}
                             />
 
