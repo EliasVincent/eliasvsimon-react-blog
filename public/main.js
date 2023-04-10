@@ -4,6 +4,7 @@ const fs = require("fs")
 const { time } = require("console")
 
 const feed = require('feed').Feed
+const showdown = require('showdown')
 
 // path to content directory
 const dirPath = path.join(__dirname, "../src/content")
@@ -192,13 +193,15 @@ const createFeed = () => {
     link: 'https://eliasvsimon.com'
   })
 
+  const converter = new showdown.Converter()
+
   posts.forEach(post => {
     rss.addItem({
       title: post.title,
       id: `https://eliasvsimon.com/post/${post.id.toString()}`,
       link: `https://eliasvsimon.com/post/${post.id.toString()}`,
       description: post.content.split(" ").slice(0, 15).join(" ").toString(),
-      content: post.content,
+      content: mdToHtml(converter, post.content).toString(),
       author: [
         {
           name: post.author,
@@ -225,6 +228,11 @@ const createFeed = () => {
 
   return
 
+}
+
+const mdToHtml = (converter, text) => {
+  const html = converter.makeHtml(text)
+  return html
 }
 
 createFeed()

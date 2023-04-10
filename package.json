@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.4.0",
-    "feed": "^4.2.2"
+    "feed": "^4.2.2",
+    "showdown": "^2.1.0"
   }
 }
