@@ -176,7 +176,7 @@ const createFeed = () => {
     copyright: 'Elias Vincent Simon',
     feedLinks: {
       json: 'https://eliasvsimon.com/feed.json',
-      atom: 'https://eliasvsimon.com/feed.atom'
+      atom: 'https://eliasvsimon.com/feed.xml'
     },
     author: {
       name: 'Elias Vincent Simon',
@@ -195,7 +195,7 @@ const createFeed = () => {
   posts.forEach(post => {
     rss.addItem({
       title: post.title,
-      id: post.id.toString(),
+      id: `https://eliasvsimon.com/post/${post.id.toString()}`,
       link: `https://eliasvsimon.com/post/${post.id.toString()}`,
       description: post.content.split(" ").slice(0, 15).join(" ").toString(),
       content: post.content,
