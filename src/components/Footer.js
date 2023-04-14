@@ -5,7 +5,7 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <hr/>
-                <p>&copy; EliasVincent {new Date().getFullYear()}. <a href="https://github.com/EliasVincent">Github</a> | <a href="./feed.xml">RSS</a>
+                <p>&copy; EliasVincent {new Date().getFullYear()}. <a href="https://github.com/EliasVincent">Github</a> | <a href="https://eliasvsimon.com/feed.xml">RSS</a>
                 </p>
             </div>
         )
