@@ -12,10 +12,10 @@
     "items": [
         {
             "id": "https://eliasvsimon.com/post/1696284000",
-            "content_html": "<p>Welcome to the unveiling of the successor to Machina-Machination’s popular X-12 manned indoor combat mech!</p>\n<p>The X-13 is but a prototype, and is not yet proven for real-world use. This is where you come in.</p>\n<p>As our best combat pilot, awarded with the medal of honor, you’ve been pulled out of retirement for one last mission. Investors will take a close look at your performance.</p>\n<p>Give them a show to remember, this weapon might change the future of warfare.</p>\n<p>Me, <a href=\"https://twitter.com/SoulPixelIV\">SoulPixelIV</a>, <a href=\"https://twitter.com/ProtoKrok\">ProtoKrok</a> and <a href=\"https://twitter.com/DervlX\">DervlX</a> made a game for the <a href=\"https://ldjam.com\">Ludum Dare 54 Gamejam</a>.</p>\n<p><a href=\"https://ldjam.com/events/ludum-dare/54/x-13-virtuous-mission\">RATE THE GAME</a></p>\n<iframe frameborder=\"0\" src=\"https://itch.io/embed/2295231?bg_color=201800&amp;fg_color=ffffff&amp;link_color=bd8600&amp;border_color=3e3800\" width=\"208\" height=\"167\"><a href=\"https://riesyeti.itch.io/x-13-virtuous-mission\">X-13 VIRTUOUS MISSION by Riesyeti</a></iframe>",
+            "content_html": "<p>Me, <a href=\"https://twitter.com/SoulPixelIV\">SoulPixelIV</a>, <a href=\"https://twitter.com/ProtoKrok\">ProtoKrok</a> and <a href=\"https://twitter.com/DervlX\">DervlX</a> made a game for the <a href=\"https://ldjam.com\">Ludum Dare 54 Gamejam</a>.</p>\n<p>Welcome to the unveiling of the successor to Machina-Machination’s popular X-12 manned indoor combat mech!</p>\n<p>The X-13 is but a prototype, and is not yet proven for real-world use. This is where you come in.</p>\n<p>As our best combat pilot, awarded with the medal of honor, you’ve been pulled out of retirement for one last mission. Investors will take a close look at your performance.</p>\n<p>Give them a show to remember, this weapon might change the future of warfare.</p>\n<p><a href=\"https://ldjam.com/events/ludum-dare/54/x-13-virtuous-mission\">RATE THE GAME</a></p>\n<iframe frameborder=\"0\" src=\"https://itch.io/embed/2295231?bg_color=201800&amp;fg_color=ffffff&amp;link_color=bd8600&amp;border_color=3e3800\" width=\"208\" height=\"167\"><a href=\"https://riesyeti.itch.io/x-13-virtuous-mission\">X-13 VIRTUOUS MISSION by Riesyeti</a></iframe>",
             "url": "https://eliasvsimon.com/post/1696284000",
             "title": "X-13 VIRTUOUS MISSION - Cool Mech Game for Ludum Dare 54\r",
-            "summary": "\r\nWelcome to the unveiling of the successor to Machina-Machination’s popular X-12 manned indoor combat mech!\r\n\r\nThe",
+            "summary": "\r\nMe, [SoulPixelIV](https://twitter.com/SoulPixelIV), [ProtoKrok](https://twitter.com/ProtoKrok) and [DervlX](https://twitter.com/DervlX) made a game for the [Ludum Dare 54 Gamejam](https://ldjam.com).\r\n\r\nWelcome to",
             "image": "https://eliasvsimon.com/favicon-32x32.png",
             "date_modified": "2023-10-02T22:00:00.000Z",
             "author": {
@@ -96,6 +96,19 @@
             "summary": "\r\n[**Visit ano-books**](https://ano-books.herokuapp.com/)\r\n\r\nAno Books is a full stack web app where anyone can create, edit, and",
             "image": "https://eliasvsimon.com/favicon-32x32.png",
             "date_modified": "2021-09-30T22:00:00.000Z",
+            "author": {
+                "name": "Elias\r",
+                "url": "https://eliasvsimon.com"
+            }
+        },
+        {
+            "id": "https://eliasvsimon.com/post/1621029600",
+            "content_html": "<p><a href=\"https://blog.catspace.xyz\"><strong>Visit catspace.xyz</strong></a></p>\n<p>Catspace.xyz is my new site with various services that are available to anyone for free!\nRight now, Catspace has</p>\n<ul>\n<li><a href=\"https://blog.catspace.xyz\">a Blog</a></li>\n<li><a href=\"https://git.catspace.xyz\">a Git Server</a></li>\n<li><a href=\"https://md.catspace.xyz\">an Online Markdown Editor</a></li>\n<li>and more to come!</li>\n</ul>\n<p>I'm trying to do a federated social media thing like Mastodon or Pleroma. Let's if I get it working or if it even makes sense at all.</p>\n<p>Expect services on Catspace to change rapidly, always look at the Blog to see what's available!</p>",
+            "url": "https://eliasvsimon.com/post/1621029600",
+            "title": "Catspace.xyz\r",
+            "summary": "\r\n[**Visit catspace.xyz**](https://blog.catspace.xyz)\r\n\r\nCatspace.xyz is my new site with various services that are available to anyone for",
+            "image": "https://eliasvsimon.com/favicon-32x32.png",
+            "date_modified": "2021-05-14T22:00:00.000Z",
             "author": {
                 "name": "Elias\r",
                 "url": "https://eliasvsimon.com"

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eliasvsimon.com/</id>
     <title>eliasvsimon.com</title>
-    <updated>2023-10-03T09:29:52.100Z</updated>
+    <updated>2023-11-18T12:22:37.979Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Elias Vincent Simon</name>
@@ -27,14 +27,14 @@
         <link href="https://eliasvsimon.com/post/1696284000"/>
         <updated>2023-10-02T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[
-Welcome to the unveiling of the successor to Machina-Machination’s popular X-12 manned indoor combat mech!
+Me, [SoulPixelIV](https://twitter.com/SoulPixelIV), [ProtoKrok](https://twitter.com/ProtoKrok) and [DervlX](https://twitter.com/DervlX) made a game for the [Ludum Dare 54 Gamejam](https://ldjam.com).
 
-The]]></summary>
-        <content type="html"><![CDATA[<p>Welcome to the unveiling of the successor to Machina-Machination’s popular X-12 manned indoor combat mech!</p>
+Welcome to]]></summary>
+        <content type="html"><![CDATA[<p>Me, <a href="https://twitter.com/SoulPixelIV">SoulPixelIV</a>, <a href="https://twitter.com/ProtoKrok">ProtoKrok</a> and <a href="https://twitter.com/DervlX">DervlX</a> made a game for the <a href="https://ldjam.com">Ludum Dare 54 Gamejam</a>.</p>
+<p>Welcome to the unveiling of the successor to Machina-Machination’s popular X-12 manned indoor combat mech!</p>
 <p>The X-13 is but a prototype, and is not yet proven for real-world use. This is where you come in.</p>
 <p>As our best combat pilot, awarded with the medal of honor, you’ve been pulled out of retirement for one last mission. Investors will take a close look at your performance.</p>
 <p>Give them a show to remember, this weapon might change the future of warfare.</p>
-<p>Me, <a href="https://twitter.com/SoulPixelIV">SoulPixelIV</a>, <a href="https://twitter.com/ProtoKrok">ProtoKrok</a> and <a href="https://twitter.com/DervlX">DervlX</a> made a game for the <a href="https://ldjam.com">Ludum Dare 54 Gamejam</a>.</p>
 <p><a href="https://ldjam.com/events/ludum-dare/54/x-13-virtuous-mission">RATE THE GAME</a></p>
 <iframe frameborder="0" src="https://itch.io/embed/2295231?bg_color=201800&amp;fg_color=ffffff&amp;link_color=bd8600&amp;border_color=3e3800" width="208" height="167"><a href="https://riesyeti.itch.io/x-13-virtuous-mission">X-13 VIRTUOUS MISSION by Riesyeti</a></iframe>]]></content>
         <author>
@@ -190,6 +190,37 @@ Ano Books is a full stack web app where anyone can create, edit, and]]></summary
 <p>I want to look into a search feature, a filter option and maybe some oauth thing to toggle visibility or something. But for now it's a grand free for all</p>
 <p><a href="https://github.com/EliasVincent/ano-books"><strong>Visit the repo</strong></a></p>
 <p>That's it for now, happy writing!</p>]]></content>
+        <author>
+            <name>Elias</name>
+            <email>riesyeti@outlook.de</email>
+            <uri>https://eliasvsimon.com</uri>
+        </author>
+        <contributor>
+            <name>Elias</name>
+            <email>riesyeti@outlook.de</email>
+            <uri>https://eliasvsimon.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Catspace.xyz]]></title>
+        <id>https://eliasvsimon.com/post/1621029600</id>
+        <link href="https://eliasvsimon.com/post/1621029600"/>
+        <updated>2021-05-14T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[
+[**Visit catspace.xyz**](https://blog.catspace.xyz)
+
+Catspace.xyz is my new site with various services that are available to anyone for]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://blog.catspace.xyz"><strong>Visit catspace.xyz</strong></a></p>
+<p>Catspace.xyz is my new site with various services that are available to anyone for free!
+Right now, Catspace has</p>
+<ul>
+<li><a href="https://blog.catspace.xyz">a Blog</a></li>
+<li><a href="https://git.catspace.xyz">a Git Server</a></li>
+<li><a href="https://md.catspace.xyz">an Online Markdown Editor</a></li>
+<li>and more to come!</li>
+</ul>
+<p>I'm trying to do a federated social media thing like Mastodon or Pleroma. Let's if I get it working or if it even makes sense at all.</p>
+<p>Expect services on Catspace to change rapidly, always look at the Blog to see what's available!</p>]]></content>
         <author>
             <name>Elias</name>
             <email>riesyeti@outlook.de</email>

@@ -15,4 +15,4 @@ This site is a React App which turns Markdown files into pages. It's pretty cool
 
 [Games on Itch.io](https://riesyeti.itch.io)
 
-[Email](mailto:riesyeti@outlook.de)
+[Email](mailto:elias@eliasvsimon.com)
