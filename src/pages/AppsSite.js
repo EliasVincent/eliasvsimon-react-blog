@@ -21,6 +21,7 @@ const AppsSite = () => {
                     >
                         <h1>Apps</h1>
                         <hr/>
+                        <h2 className="apps-link"><a target="_blank" rel="noopener noreferrer" href="https://snotes.maidsin.space/">SNOTES - Simple Notes App</a></h2>
                         <h2 className="apps-link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EliasVincent/whisper-subtitles-webui">Whisper Subtitles WebUI</a></h2>
                         <h2 className="apps-link"><a target="_blank" rel="noopener noreferrer" href="https://eliasvincent.github.io/elden-ring-rune-calculator/">Elden Ring Rune Calculator</a></h2>
                         <h2 className="apps-link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/EliasVincent/joplin-email-note">Joplin Email Note Plugin</a></h2>

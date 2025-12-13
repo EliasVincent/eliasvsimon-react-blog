@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eliasvsimon.com/</id>
     <title>eliasvsimon.com</title>
-    <updated>2023-11-18T12:22:37.979Z</updated>
+    <updated>2025-12-13T12:15:42.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Elias Vincent Simon</name>
@@ -21,6 +21,38 @@
         <email>riesyeti@outlook.de</email>
         <uri>https://eliasvsimon.com</uri>
     </contributor>
+    <entry>
+        <title type="html"><![CDATA[SNOTES - A Simple Desktop Note-Taking App]]></title>
+        <id>https://eliasvsimon.com/post/1765580400</id>
+        <link href="https://eliasvsimon.com/post/1765580400"/>
+        <updated>2025-12-12T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[
+On the side I've been working on **SNOTES**, a simple desktop note-taking application built with]]></summary>
+        <content type="html"><![CDATA[<p>On the side I've been working on <strong>SNOTES</strong>, a simple desktop note-taking application built with Tauri and SQLite. It's been a while since the last update and I wanted to show a bit of progress.</p>
+<p><img src="/images/16.png" title="SNOTES" alt="SNOTES"></p>
+<p>SNOTES is all about simplicity and speed. No bloat, no BS - just quickly create, paste, tag and search notes. It's built with Tauri as the frontend framework and uses SQLite as the storage backend, which means it's lightweight and blazing fast.</p>
+<p>It's not the most complex thing from a software development standpoint: everything fits inside a ~1000 line vanilla TypeScript file, but it actually turned out to be quite useful to me.</p>
+<p>Some highlights:</p>
+<ul>
+<li><strong>Free</strong> - SNOTES is free software</li>
+<li><strong>Simple</strong> - Create and manage your notes with a simple and intuitive interface</li>
+<li><strong>Fast</strong> - Everything from startup to search is lightning fast</li>
+<li><strong>OCR</strong> - Use Optical Character Recognition to extract text from image files</li>
+<li><strong>Export</strong> - Export your notes in various formats such as TXT or Markdown</li>
+</ul>
+<p>If you're tired of overcomplicated note apps and just want something that works, give SNOTES a try.</p>
+<p><a href="https://snotes.maidsin.space/">Check it out and download here</a></p>]]></content>
+        <author>
+            <name>Elias</name>
+            <email>riesyeti@outlook.de</email>
+            <uri>https://eliasvsimon.com</uri>
+        </author>
+        <contributor>
+            <name>Elias</name>
+            <email>riesyeti@outlook.de</email>
+            <uri>https://eliasvsimon.com</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[X-13 VIRTUOUS MISSION - Cool Mech Game for Ludum Dare 54]]></title>
         <id>https://eliasvsimon.com/post/1696284000</id>
@@ -359,25 +391,6 @@ It's]]></summary>
 <p>Trailer:</p>
 <iframe width="280" height="157" src="https://www.youtube-nocookie.com/embed/GZ-7jcGK_hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://riesyeti.itch.io/catformer">Play in Browser / Download for Windows, Mac and Linux</a></p>]]></content>
-        <author>
-            <name>Elias</name>
-            <email>riesyeti@outlook.de</email>
-            <uri>https://eliasvsimon.com</uri>
-        </author>
-        <contributor>
-            <name>Elias</name>
-            <email>riesyeti@outlook.de</email>
-            <uri>https://eliasvsimon.com</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Post on evs blog!]]></title>
-        <id>https://eliasvsimon.com/post/1593640800</id>
-        <link href="https://eliasvsimon.com/post/1593640800"/>
-        <updated>2020-07-01T22:00:00.000Z</updated>
-        <summary type="html"><![CDATA[
-First post, hello there!]]></summary>
-        <content type="html"><![CDATA[<p>First post, hello there!</p>]]></content>
         <author>
             <name>Elias</name>
             <email>riesyeti@outlook.de</email>
