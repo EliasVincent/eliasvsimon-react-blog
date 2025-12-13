@@ -73,6 +73,11 @@ hr {
     text-align: center;
 }
 
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @keyframes Diagonal {
     0% {background-position: 0% 50%}
     100% {background-position: 100% 50%}

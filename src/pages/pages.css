@@ -3,15 +3,15 @@ h2{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(233, 233, 233);
     font-weight: lighter;
 }
 
 a:hover {
     color: rgb(151, 53, 122);
-
-    transition: 0.2s ease-out;
+    /* text-decoration: underline; */
+    transition: 0.15s ease-out;
 }
 
 p{
