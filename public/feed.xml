@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eliasvsimon.com/</id>
     <title>eliasvsimon.com</title>
-    <updated>2025-12-13T12:15:42.618Z</updated>
+    <updated>2026-01-24T12:25:15.435Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Elias Vincent Simon</name>
@@ -391,6 +391,25 @@ It's]]></summary>
 <p>Trailer:</p>
 <iframe width="280" height="157" src="https://www.youtube-nocookie.com/embed/GZ-7jcGK_hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://riesyeti.itch.io/catformer">Play in Browser / Download for Windows, Mac and Linux</a></p>]]></content>
+        <author>
+            <name>Elias</name>
+            <email>riesyeti@outlook.de</email>
+            <uri>https://eliasvsimon.com</uri>
+        </author>
+        <contributor>
+            <name>Elias</name>
+            <email>riesyeti@outlook.de</email>
+            <uri>https://eliasvsimon.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[First Post on evs blog!]]></title>
+        <id>https://eliasvsimon.com/post/1593640800</id>
+        <link href="https://eliasvsimon.com/post/1593640800"/>
+        <updated>2020-07-01T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[
+First post, hello there!]]></summary>
+        <content type="html"><![CDATA[<p>First post, hello there!</p>]]></content>
         <author>
             <name>Elias</name>
             <email>riesyeti@outlook.de</email>

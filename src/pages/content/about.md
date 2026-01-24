@@ -1,6 +1,6 @@
-Hi! I'm Elias and this is eliasvsimon.com, my personal React website/blog
+Hi! I'm Elias and this is eliasvsimon.com, my personal website/blog.
 
-Currently I'm an aspiring software developer working in intralogistics software. Outside of that I'm developing mostly web apps and games in my free time. Check out the Apps and Games pages.
+I'm a software developer working in intralogistics software. Outside of that I'm developing mostly web apps and games in my free time. Check out the Apps and Games pages.
 
 This site is a React App which turns Markdown files into pages. It's pretty cool.
 
