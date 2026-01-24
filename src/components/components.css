@@ -70,7 +70,19 @@ hr {
     text-shadow: 2px 1px 6px rgba(150, 150, 150, 1);
     padding: 10px 20px;
 
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.header h1 {
+    margin: 0;
 }
 
 .header a {
