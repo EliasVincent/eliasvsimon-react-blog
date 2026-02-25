@@ -42,6 +42,30 @@ hr {
     transition: 0.2s ease-out;
 }
 
+.navbar-link {
+    text-decoration: none;
+    color: #d8d8d8;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+    color: #a0a0a0;
+}
+
+.navbar-title {
+    text-decoration: none;
+    color: #e9efff;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.navbar-title:hover {
+    color: #b8c0d9;
+}
+
 /* --- COMPONENTS --- */
 
 .layout {

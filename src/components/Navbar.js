@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 
+import "./components.css"
+
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -70,29 +72,22 @@ const Navbar = () => {
         gap: '15px',
         boxShadow: '0 8px 30px rgba(136, 0, 194, 0.5)',
         zIndex: 1001,
-        minWidth: '120px'
+        minWidth: '120px',
+        opacity: isMenuOpen ? 1 : 0,
+        transform: isMenuOpen ? 'translateY(0) scale(1)' : 'translateY(-10px) scale(0.95)',
+        pointerEvents: isMenuOpen ? 'auto' : 'none',
+        transition: 'opacity 0.25s ease, transform 0.25s ease'
     };
 
-    const titleStyle = {
-        textDecoration: 'none',
-        color: '#e9efff',
-        fontWeight: 600,
-        fontSize: 'clamp(0.9rem, 3vw, 1.2rem)',
-        transition: 'color 0.2s ease',
-        whiteSpace: 'nowrap'
+    const inlineTitleStyle = {
+        fontSize: 'clamp(0.9rem, 3vw, 1.2rem)'
     };
 
-    const linkStyle = {
-        textDecoration: 'none',
-        color: '#d8d8d8',
-        fontWeight: 500,
-        transition: 'color 0.2s ease',
-        fontSize: 'clamp(0.85rem, 2.5vw, 1rem)',
-        whiteSpace: 'nowrap'
+    const inlineLinkStyle = {
+        fontSize: 'clamp(0.85rem, 2.5vw, 1rem)'
     };
 
     const menuLinkStyle = {
-        ...linkStyle,
         fontSize: '1rem',
         padding: '5px 0'
     };
@@ -103,11 +98,11 @@ const Navbar = () => {
     if (!showCollapsed) {
         return (
             <div style={panelStyle}>
-                <Link style={titleStyle} to="/">eliasvsimon</Link>
-                <Link style={linkStyle} to="/">Home</Link>
-                <Link style={linkStyle} to="/games">Games</Link>
-                <Link style={linkStyle} to="/apps">Apps</Link>
-                <Link style={linkStyle} to="/about">About</Link>
+                <Link className="navbar-title" style={inlineTitleStyle} to="/">eliasvsimon</Link>
+                <Link className="navbar-link" style={inlineLinkStyle} to="/">Home</Link>
+                <Link className="navbar-link" style={inlineLinkStyle} to="/games">Games</Link>
+                <Link className="navbar-link" style={inlineLinkStyle} to="/apps">Apps</Link>
+                <Link className="navbar-link" style={inlineLinkStyle} to="/about">About</Link>
             </div>
         )
     }
@@ -119,16 +114,14 @@ const Navbar = () => {
                 style={collapsedStyle} 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-                <span style={titleStyle}>eliasvsimon</span>
+                <span className="navbar-title" style={inlineTitleStyle}>eliasvsimon</span>
             </div>
-            {isMenuOpen && (
-                <div style={expandedMenuStyle}>
-                    <Link style={menuLinkStyle} to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-                    <Link style={menuLinkStyle} to="/games" onClick={() => setIsMenuOpen(false)}>Games</Link>
-                    <Link style={menuLinkStyle} to="/apps" onClick={() => setIsMenuOpen(false)}>Apps</Link>
-                    <Link style={menuLinkStyle} to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
-                </div>
-            )}
+            <div style={expandedMenuStyle}>
+                <Link className="navbar-link" style={menuLinkStyle} to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+                <Link className="navbar-link" style={menuLinkStyle} to="/games" onClick={() => setIsMenuOpen(false)}>Games</Link>
+                <Link className="navbar-link" style={menuLinkStyle} to="/apps" onClick={() => setIsMenuOpen(false)}>Apps</Link>
+                <Link className="navbar-link" style={menuLinkStyle} to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+            </div>
         </>
     )
 }
