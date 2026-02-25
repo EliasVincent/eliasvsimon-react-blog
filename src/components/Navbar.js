@@ -50,7 +50,7 @@ const Navbar = () => {
         maxWidth: '90vw'
     };
 
-    const collapsedStyle = {
+    const collapsedLeftStyle = {
         ...panelStyle,
         left: '20px',
         right: 'auto',
@@ -59,7 +59,13 @@ const Navbar = () => {
         cursor: 'pointer'
     };
 
-    const expandedMenuStyle = {
+    const collapsedCenterStyle = {
+        ...panelStyle,
+        padding: '10px 20px',
+        cursor: 'pointer'
+    };
+
+    const expandedMenuLeftStyle = {
         display: 'flex',
         flexDirection: 'column',
         position: 'fixed',
@@ -79,6 +85,12 @@ const Navbar = () => {
         transition: 'opacity 0.25s ease, transform 0.25s ease'
     };
 
+    const expandedMenuCenterStyle = {
+        ...expandedMenuLeftStyle,
+        left: '50%',
+        transform: isMenuOpen ? 'translateX(-50%) translateY(0) scale(1)' : 'translateX(-50%) translateY(-10px) scale(0.95)'
+    };
+
     const inlineTitleStyle = {
         fontSize: 'clamp(0.9rem, 3vw, 1.2rem)'
     };
@@ -92,10 +104,8 @@ const Navbar = () => {
         padding: '5px 0'
     };
 
-    // On mobile OR when scrolled, show collapsed button
-    const showCollapsed = isMobile || isScrolled
-
-    if (!showCollapsed) {
+    // Desktop, not scrolled: full navbar
+    if (!isMobile && !isScrolled) {
         return (
             <div style={panelStyle}>
                 <Link className="navbar-title" style={inlineTitleStyle} to="/">eliasvsimon</Link>
@@ -107,16 +117,36 @@ const Navbar = () => {
         )
     }
 
-    // Collapsed button on top left
+    // Mobile at top (not scrolled): collapsed centered
+    if (isMobile && !isScrolled) {
+        return (
+            <>
+                <div 
+                    style={collapsedCenterStyle} 
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    <span className="navbar-title" style={inlineTitleStyle}>eliasvsimon</span>
+                </div>
+                <div style={expandedMenuCenterStyle}>
+                    <Link className="navbar-link" style={menuLinkStyle} to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+                    <Link className="navbar-link" style={menuLinkStyle} to="/games" onClick={() => setIsMenuOpen(false)}>Games</Link>
+                    <Link className="navbar-link" style={menuLinkStyle} to="/apps" onClick={() => setIsMenuOpen(false)}>Apps</Link>
+                    <Link className="navbar-link" style={menuLinkStyle} to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+                </div>
+            </>
+        )
+    }
+
+    // Desktop scrolled OR Mobile scrolled: collapsed on top left
     return (
         <>
             <div 
-                style={collapsedStyle} 
+                style={collapsedLeftStyle} 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
                 <span className="navbar-title" style={inlineTitleStyle}>eliasvsimon</span>
             </div>
-            <div style={expandedMenuStyle}>
+            <div style={expandedMenuLeftStyle}>
                 <Link className="navbar-link" style={menuLinkStyle} to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
                 <Link className="navbar-link" style={menuLinkStyle} to="/games" onClick={() => setIsMenuOpen(false)}>Games</Link>
                 <Link className="navbar-link" style={menuLinkStyle} to="/apps" onClick={() => setIsMenuOpen(false)}>Apps</Link>
