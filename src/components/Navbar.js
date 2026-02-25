@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router-dom"
 
 import "./components.css"
@@ -7,6 +7,9 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
+    
+    const buttonRef = useRef(null)
+    const menuRef = useRef(null)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,6 +20,18 @@ const Navbar = () => {
             setIsMobile(window.innerWidth <= 768)
         }
         
+        // Close menu when clicking outside
+        const handleClickOutside = (event) => {
+            if (
+                buttonRef.current && 
+                !buttonRef.current.contains(event.target) &&
+                menuRef.current && 
+                !menuRef.current.contains(event.target)
+            ) {
+                setIsMenuOpen(false)
+            }
+        }
+        
         // Initial checks
         handleScroll()
         handleResize()
@@ -24,11 +39,17 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll)
         window.addEventListener('resize', handleResize)
         
+        // Only add click listener when menu is open
+        if (isMenuOpen) {
+            document.addEventListener('mousedown', handleClickOutside)
+        }
+        
         return () => {
             window.removeEventListener('scroll', handleScroll)
             window.removeEventListener('resize', handleResize)
+            document.removeEventListener('mousedown', handleClickOutside)
         }
-    }, [])
+    }, [isMenuOpen])
 
     const panelStyle = {
         display: 'flex',
@@ -122,12 +143,13 @@ const Navbar = () => {
         return (
             <>
                 <div 
+                    ref={buttonRef}
                     style={collapsedCenterStyle} 
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     <span className="navbar-title" style={inlineTitleStyle}>eliasvsimon</span>
                 </div>
-                <div style={expandedMenuCenterStyle}>
+                <div ref={menuRef} style={expandedMenuCenterStyle}>
                     <Link className="navbar-link" style={menuLinkStyle} to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
                     <Link className="navbar-link" style={menuLinkStyle} to="/games" onClick={() => setIsMenuOpen(false)}>Games</Link>
                     <Link className="navbar-link" style={menuLinkStyle} to="/apps" onClick={() => setIsMenuOpen(false)}>Apps</Link>
@@ -141,12 +163,13 @@ const Navbar = () => {
     return (
         <>
             <div 
+                ref={buttonRef}
                 style={collapsedLeftStyle} 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
                 <span className="navbar-title" style={inlineTitleStyle}>eliasvsimon</span>
             </div>
-            <div style={expandedMenuLeftStyle}>
+            <div ref={menuRef} style={expandedMenuLeftStyle}>
                 <Link className="navbar-link" style={menuLinkStyle} to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
                 <Link className="navbar-link" style={menuLinkStyle} to="/games" onClick={() => setIsMenuOpen(false)}>Games</Link>
                 <Link className="navbar-link" style={menuLinkStyle} to="/apps" onClick={() => setIsMenuOpen(false)}>Apps</Link>
