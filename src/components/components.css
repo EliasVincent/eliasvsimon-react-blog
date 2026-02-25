@@ -89,13 +89,16 @@ hr {
     justify-content: space-around;
     flex-wrap: wrap;
     
-    padding: 10px 5px;
+    padding: 15px 20px;
 
-    border: 1px transparent rgb(197, 143, 197);
+    background-color: rgba(77, 12, 77, 0.9);
+    backdrop-filter: blur(10px);
 
-    -webkit-box-shadow: 0px 12px 17px -8px rgba(136,0,194,1);
-    -moz-box-shadow: 0px 12px 17px -8px rgba(136,0,194,1);
-    box-shadow: 0px 12px 17px -8px rgba(136,0,194,1);
+    border-radius: 16px;
+
+    -webkit-box-shadow: 0px 8px 24px rgba(136, 0, 194, 0.4);
+    -moz-box-shadow: 0px 8px 24px rgba(136, 0, 194, 0.4);
+    box-shadow: 0px 8px 24px rgba(136, 0, 194, 0.4);
 }
 
 .footer {
