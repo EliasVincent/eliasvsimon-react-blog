@@ -4,9 +4,19 @@ import { Link } from "react-router-dom"
 import "./components.css"
 
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return window.scrollY > 100
+        }
+        return false
+    })
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return window.innerWidth <= 768
+        }
+        return false
+    })
     
     const buttonRef = useRef(null)
     const menuRef = useRef(null)
@@ -31,10 +41,6 @@ const Navbar = () => {
                 setIsMenuOpen(false)
             }
         }
-        
-        // Initial checks
-        handleScroll()
-        handleResize()
         
         window.addEventListener('scroll', handleScroll)
         window.addEventListener('resize', handleResize)
